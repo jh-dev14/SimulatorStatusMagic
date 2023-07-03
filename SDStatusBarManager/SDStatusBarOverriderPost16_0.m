@@ -201,12 +201,12 @@ typedef struct {
   StatusBarOverrideData *overrides = [UIStatusBarServer getStatusBarOverrideData];
 
   // Set 9:41 time in current localization
-  strcpy(overrides->values.timeString, [self.timeString cStringUsingEncoding:NSUTF8StringEncoding]);
-  overrides->overrideTimeString = 1;
+  //strcpy(overrides->values.timeString, [self.timeString cStringUsingEncoding:NSUTF8StringEncoding]);
+  //overrides->overrideTimeString = 1;
   
   // Set Tue Jan 9 in current localization
-  strcpy(overrides->values.dateString, [self.dateString cStringUsingEncoding:NSUTF8StringEncoding]);
-  overrides->overrideDateString = 1;
+  //strcpy(overrides->values.dateString, [self.dateString cStringUsingEncoding:NSUTF8StringEncoding]);
+  //overrides->overrideDateString = 1;
   
   // Show / Hide date on iPad
   if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
